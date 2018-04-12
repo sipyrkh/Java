@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="332.0" prefWidth="606.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+  <tabs>
+    <Tab text="Вход">
+         <content>
+            <Pane prefHeight="303.0" prefWidth="608.0">
+               <children>
+                  <ImageView fitHeight="318.0" fitWidth="737.0" layoutX="-94.0" layoutY="-15.0">
+                     <image>
+                        <Image url="@head-s1.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="166.0" layoutY="-8.0" prefHeight="62.0" prefWidth="287.0" text="Авторизация" textAlignment="CENTER" textFill="#f8345b" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="Impact" size="50.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow color="#901313" />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant azimuth="65.93" color="#ff1212" elevation="128.72" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Label>
+                  <Button fx:id="Button_log" defaultButton="true" layoutX="18.0" layoutY="251.0" mnemonicParsing="false" onAction="#login" prefHeight="45.0" prefWidth="569.0" text="Войти" textAlignment="CENTER" textFill="RED">
+                     <font>
+                        <Font name="Impact" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <TextField fx:id="username" layoutX="18.0" layoutY="54.0" prefHeight="43.0" prefWidth="275.0" promptText="Введите логин">
+                     <font>
+                        <Font name="Arial" size="23.0" />
+                     </font></TextField>
+                  <Label fx:id="ErrorVvod" layoutX="109.0" layoutY="209.0" opacity="0.0" prefHeight="27.0" prefWidth="289.0" text="Неверный ввод логина и/или пароля!" textFill="RED" wrapText="true">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="password" layoutX="19.0" layoutY="116.0" prefHeight="43.0" prefWidth="274.0" promptText="Введите пароль">
+                     <font>
+                        <Font name="Arial" size="23.0" />
+                     </font>
+                  </PasswordField>
+               </children>
+            </Pane>
+         </content>
+    </Tab>
+    <Tab text="Регистрация">
+         <content>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="377.0" fitWidth="606.0">
+                     <image>
+                        <Image url="@gCIBKDr.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="45.0" text="Регистрация" textAlignment="CENTER" textFill="#8a8a8a" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font name="Impact" size="50.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="Button_create" blendMode="DIFFERENCE" layoutX="45.0" layoutY="244.0" mnemonicParsing="false" onAction="#registration" prefHeight="45.0" prefWidth="523.0" text="Зарегистрироваться">
+                     <font>
+                        <Font name="Impact" size="24.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="username_reg" blendMode="HARD_LIGHT" layoutX="45.0" layoutY="70.0" prefHeight="40.0" prefWidth="274.0" promptText="Введите логин">
+                     <font>
+                        <Font name="Arial" size="23.0" />
+                     </font></TextField>
+                  <PasswordField fx:id="password_reg" blendMode="HARD_LIGHT" layoutX="46.0" layoutY="155.0" prefHeight="43.0" prefWidth="272.0" promptText="Введите пароль">
+                     <font>
+                        <Font name="Arial" size="23.0" />
+                     </font>
+                  </PasswordField>
+               </children>
+            </Pane>
+         </content>
+    </Tab>
+  </tabs>
+</TabPane>
